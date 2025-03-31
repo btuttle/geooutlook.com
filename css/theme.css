@@ -16,6 +16,10 @@
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
+  --bs-gopalette-darkblue: #164B60;
+  --bs-gopalette-mediumblue: #1B6B93;
+  --bs-gopalette-lightblue: #4FC0D0;  
+  --bs-gopalette-lightgreen: #A2FF86;  
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
@@ -35,6 +39,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #343a40;
+  --gopallette-primary-rgb: 11,38,48;
+  --gopallette-secondary-rgb: 211,226,230;    
   --bs-primary-rgb: 21, 21, 21;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -3015,7 +3021,7 @@ textarea.form-control-lg {
   --bs-navbar-disabled-color: rgba(21, 21, 21, 0.3);
   --bs-navbar-active-color: rgba(21, 21, 21, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
-  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-margin-end: 0.25rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(21, 21, 21, 0.9);
   --bs-navbar-brand-hover-color: rgba(21, 21, 21, 0.9);
@@ -5431,6 +5437,11 @@ textarea.form-control-lg {
   .link-primary:hover, .link-primary:focus {
     color: #111111 !important; }
 
+.gopallette-link-secondary {
+  color: #4FC0D0 !important; }
+  .link-secondary:hover, .link-secondary:focus {
+    color: #143948 !important; }
+
 .link-secondary {
   color: #6c757d !important; }
   .link-secondary:hover, .link-secondary:focus {
@@ -6569,6 +6580,15 @@ textarea.form-control-lg {
   word-break: break-word !important; }
 
 /* rtl:end:remove */
+.gopallette-text-primary {
+  --bs-text-opacity: 1;
+  color: rgba(var(--gopallette-primary-rgb), var(--bs-text-opacity)) !important; }
+
+.gopallette-text-secondary {
+  --bs-text-opacity: 1;
+  color: rgba(var(--gopallette-secondary-rgb), var(--bs-text-opacity)) !important; }
+
+
 .text-primary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; }
@@ -9100,6 +9120,18 @@ img {
 
 .bp-center {
   background-position: center center; }
+
+.bg-gopalette-darkblue { 
+  background-color: #164B60; }
+
+.bg-gopalette-mediumblue { 
+  background-color: #1B6B93; }
+
+.bg-gopalette-lightblue { 
+  background-color: #4FC0D0; }
+
+.bg-gopalette-lightgreen { 
+  background-color: #A2FF86; }
 
 .bg-gray-100 {
   background-color: #f8f9fa; }
